@@ -3,7 +3,7 @@ Imagine being a new student at a university, in a completely unfamiliar departme
 
 Now, what's cool is that I've created a super user-friendly template for this website. You don't need to worry about servers, costs, or any fancy programming skills. It's as easy as a few clicks! You can customize and publish your very own website for your department's batch using GitHub pages.
 
-The primary objective of the Students Introductory Website is to streamline student information management within a department of educational institutions.
+The primary objective of the Students Introductory Website is to streamline student information management within a department of educational institutions. Visit [this website](https://nishatrhythm.github.io/CSE11/) to get a overview how it looks like.
 
 So, let's dive right in and make it happen. Say goodbye to feeling lost and hello to making new friends and connections effortlessly!
 
@@ -59,21 +59,3 @@ While a laptop is necessary for running the local server and accessing the admin
 - macOS
 - Android
 - iOS
-
-# 🛠️ Environment Setup
-
-### Download Node.js
-
-1. Visit the official Node.js website at [https://nodejs.org/](https://nodejs.org/).
-2. Download the LTS version as it's more stable and suitable for production use.
-
-  ![Node.js Download Page](https://github.com/nishatrhythm/CSE11/blob/main/instructions/Screenshot_1.png)
-
-### Initialize a Node.js Project
-
-1. Open a terminal or command prompt.
-2. Navigate to the project folder where you want to create your Node.js project.
-3. Run the following command to initialize a new Node.js project:
-
-   ```bash
-   npm init -y
