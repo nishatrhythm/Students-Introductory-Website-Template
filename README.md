@@ -33,10 +33,9 @@ This project is licensed under the [MIT License](link-to-license).
 
 ## Acknowledgments
 We would like to express our gratitude to the open-source community and the following tools and libraries for their contributions to this project:
-- [Express.js](link-to-express)
-- [Bootstrap](link-to-bootstrap)
-- [Passport.js](link-to-passport)
-- [Multer](link-to-multer)
+- [Express.js](https://expressjs.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Multer](https://expressjs.com/en/resources/middleware/multer.html)
 
 ## Contact
-If you have any questions or require assistance, please feel free to contact [Your Name or Email](mailto:your-email@example.com).
+If you have any questions or require assistance, create a new issue [here](https://github.com/nishatrhythm/Students-Introductory-Website-Template/issues).
