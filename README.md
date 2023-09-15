@@ -26,7 +26,7 @@ So, let's dive right in and make it happen. Say goodbye to feeling lost and hell
 To set up and use the Student Management System, refer to the [documentation](link-to-documentation).
 
 ## Contributing
-Contributions to this project are welcome! Please review our [contribution guidelines](link-to-contribution-guidelines) for details on how to get involved.
+Contributions to this project are welcome! Please review the [contribution guidelines](link-to-contribution-guidelines) for details on how to get involved.
 
 ## License
 This project is licensed under the [MIT License](link-to-license).
@@ -42,20 +42,30 @@ If you have any questions or require assistance, create a new issue [here](https
 
 # 💻 Device Requirements
 
-**Laptop or Desktop (Required):** You'll need a laptop or desktop computer to create the local server and manage student records through the admin panel. There are no specific device specifications like x86 or x64, RAM, or hard drive space requirements.
+### Laptop or Desktop (Required)
+You'll need a laptop or desktop computer to create the local server and manage student records through the admin panel. There are no specific device specifications like x86 or x64, RAM, or hard drive space requirements.
 
-**Mobile (Optional):** While a laptop is necessary for running the local server and accessing the admin panel, you also have the option to manage student records through the admin panel using a mobile web browser.
+### Mobile (Optional)
+While a laptop is necessary for running the local server and accessing the admin panel, you also have the option to manage student records through the admin panel using a mobile web browser.
 
-**Operating System (for local server):** Windows, Ubuntu, macOS
+### Operating System (to create the local server)
+- Windows
+- Ubuntu
+- macOS
 
-**Operating System (for admin panel):** Windows, Ubuntu, macOS, Android, iOS
+### Operating System (for accessing the Admin Panel)
+- Windows
+- Ubuntu
+- macOS
+- Android
+- iOS
 
 # 🛠️ Environment Setup
 
 ### Download Node.js
 
 1. Visit the official Node.js website at [https://nodejs.org/](https://nodejs.org/).
-2. On the website, you'll find two versions available for download: LTS (Long Term Support) and Current. For most users, it's recommended to download the LTS version as it's more stable and suitable for production use.
+2. Download the LTS version as it's more stable and suitable for production use.
 
   ![Node.js Download Page](https://github.com/nishatrhythm/CSE11/blob/main/instructions/Screenshot_1.png)
 
