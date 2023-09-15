@@ -1,0 +1,587 @@
+/* Font import and universal font-family declaration */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles with animated gradient background */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Align content to left and right */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    padding: 0 110px;
+    color: white;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #ff8a00, #e52e71, #f64f59, #c471ed, #12c2e9, #00d2ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s linear infinite alternate;
+}
+
+.navbar h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    /* Text color is black */
+    padding: 10px 20px;
+    /* Add padding to make it look like a button */
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    /* Button background is white */
+    transition: background-color 0.3s ease;
+    /* Add a transition effect for hover */
+}
+
+.nav-button:hover {
+    background-color: #f0f0f0;
+    /* Slightly darker background on hover */
+    color: black;
+    /* Text color is black on hover */
+}
+
+/* Animation for the navbar background gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Add this CSS to center-align the content in the "Student ID" and "Actions" columns */
+#studentTable tbody tr td:nth-child(1),
+#studentTable tbody tr td:nth-child(3) {
+    text-align: center;
+}
+
+#studentTable tbody tr td:nth-child(1),
+#studentTable tbody tr td:nth-child(2),
+#studentTable tbody tr td:nth-child(3) {
+    vertical-align: middle;
+}
+
+/* Add this CSS to add some margin between the buttons in the "Actions" column */
+#studentTable tbody tr td:nth-child(3) .btn {
+    margin-right: 10px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    text-align: center;
+    width: 65px;
+}
+
+/* Add this to your styles.css file or within a <style> tag in the HTML document */
+.polite-background {
+    background-color: #f8f9fa;
+    /* Use your preferred background color */
+    padding: 40px;
+    /* Adjust padding as needed */
+    border-radius: 10px;
+    /* Add a subtle border-radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a subtle box shadow */
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+/* Add this style to make the labels bold */
+.polite-background label {
+    font-weight: bold;
+}
+
+/* Add this CSS to style the social links table */
+.social-links-table {
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.social-links-table td {
+    padding: 5px;
+    text-align: center;
+}
+
+.social-links-table label {
+    font-weight: bold;
+    display: block;
+}
+
+.social-links-table .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links-table .input-group-prepend {
+    flex: 0 0 auto;
+}
+
+/* Update the CSS to style the social links table rows */
+.social-links-table tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.social-links-table td {
+    width: 48%;
+    /* Adjust the width as needed */
+}
+
+/* Add this CSS to style the social links table labels */
+.social-links-table label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* Adjust the margin as needed to reduce spacing */
+    display: block;
+}
+
+/* Custom Tooltip */
+.custom-tooltip {
+    position: absolute;
+    background-color: orange;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    z-index: 1000;
+    pointer-events: none;
+    white-space: normal;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    word-wrap: break-word;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+
+/* Remove the arrow-style */
+.custom-tooltip::before {
+    display: none;
+}
+
+/* Add padding to the left of the i icon */
+.fas.fa-info-circle {
+    padding-left: 10px;
+}
+
+/* Add a warning color to the i icon */
+.warning-icon {
+    color: orange;
+    /* You can adjust the color code as needed */
+}
+
+/* Add a media query for smaller screens to stack social links vertically */
+@media (max-width: 768px) {
+    .social-links-table td {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+}
+
+/* Add padding to the right of the Student Image label */
+.form-group.mb-3 label[for="image"] {
+    margin-top: 20px;
+    /* Adjust the margin-top value as needed */
+    margin-bottom: 20px;
+    padding-right: 10px;
+    /* Add padding to the right of the label */
+}
+
+/* Move the "Choose file" button to a new line */
+.form-group.mb-3 input[type="file"] {
+    padding-left: 15px;
+}
+
+/* Add padding to the Add Student button and center align it */
+.form-group button[type="submit"] {
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    display: block;
+    margin: 0 auto;
+    /* Center align the button horizontally */
+    margin-top: 50px;
+}
+
+/* Center-align the content within the "col-md-6" container */
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    /* Limit the maximum width of the form container */
+    margin: 0 auto;
+    /* Center-align the container horizontally */
+}
+
+.container {
+    margin-bottom: 20px;
+    /* Add spacing after the form */
+}
+
+.table-responsive {
+    background-color: #f8f9fa;
+    /* Your preferred background color */
+}
+
+/* Center-align the thead elements in the table */
+#studentTable thead th {
+    text-align: center;
+}
+
+/* In your styles.css or inside a <style> element in your HTML */
+.student-image-container {
+    position: relative;
+    width: 100%;
+}
+
+.student-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    /* Maintain aspect ratio and cover container */
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    transition: visibility 0.3s, opacity 0.3s, transform 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 450px;
+    transform: translateY(-20px);
+    animation: modal-fade-slide 0.3s ease-out forwards;
+}
+
+@keyframes modal-fade-slide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-body {
+    text-align: center;
+    font-size: 16px;
+    /* font-weight: 500; */
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+#modalIcon {
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+
+#modalOkayBtn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 120px;
+    letter-spacing: 3px;
+}
+
+#modalOkayBtn:hover {
+    background-color: #0056b3;
+}
+
+#modalCancelBtn {
+    background-color: #007BFF;
+    color: #fff;
+    border: 2px solid #007BFF;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 120px;
+    letter-spacing: 3px;
+    margin-right: 10px;
+}
+
+#modalCancelBtn:hover {
+    background-color: #0056b3;
+    border: 2px solid #0056b3;
+}
+
+#modalConfirmBtn {
+    color: red;
+    background-color: transparent;
+    border: 2px solid red;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 120px;
+    letter-spacing: 3px;
+}
+
+#modalConfirmBtn:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.error-message {
+    color: orange;
+    /* Set the text color to orange for error messages */
+}
+
+/* CSS to disable body scrolling when the modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+::selection {
+    background-color: blue;
+    color: white;
+    /* Text color within the selection */
+}
+
+input,
+textarea {
+    caret-color: black;
+}
+
+/* Stylish text selection */
+::selection {
+    background-color: #3498db;
+    /* Highlight color */
+    color: #ffffff;
+    /* Text color within the selection */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+}
+
+/* Smooth cursor animation */
+input,
+textarea {
+    caret-color: #e74c3c;
+    /* Cursor color */
+    transition: caret-color 0.3s ease;
+    /* Smooth transition */
+    border: 2px solid #ecf0f1;
+    /* Border color */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px;
+    /* Spacing around input */
+}
+
+/* Hover effect for input and textarea */
+input:hover,
+textarea:hover {
+    border-color: #3498db;
+    /* Border color on hover */
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    /* Box shadow on hover */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
+}
+
+@media screen and (max-width: 1399px) {
+    .polite-background {
+        margin-right: 22%;
+        margin-left: 22%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .polite-background {
+        margin-right: 18%;
+        margin-left: 18%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .polite-background {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .custom-tooltip {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+        .polite-background {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .custom-tooltip {
+        max-width: 270px;
+    }
+}
+
+@media screen and (min-width: 670px) and (max-width: 767px) {
+    .navbar {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (min-width: 526px) and (max-width: 669px) {
+    .custom-tooltip {
+        max-width: 320px;
+    }
+}
+
+@media screen and (min-width: 453px) and (max-width: 526px) {
+    .custom-tooltip {
+        max-width: 250px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 453px) {
+    .custom-tooltip {
+        max-width: 200px;
+    }
+}
+
+@media screen and (min-width: 340px) and (max-width: 400px) {
+    .custom-tooltip {
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .navbar h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .polite-background {
+        padding: 20px;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .social-links-table td {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .polite-background label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    #modalCancelBtn,  #modalConfirmBtn {
+        width: 85px;
+        letter-spacing: 0;
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .nav-button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}

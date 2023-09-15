@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Introductory Website | CSE 11</title>
+
+    <meta property='og:title' content='Introductory Website | Department and Batch'>
+    <meta property='og:image' content='https://nishatrhythm.github.io/CSE11/images/link_share_image.jpg'>
+    <meta property='og:description' content='An introductory website of Nth Batch, Department of [Department Name], University Name'>
+    <meta property='og:url' content='https://nishatrhythm.github.io/CSE11'>
+    <meta property='og:image:width' content='4800'>
+    <meta property='og:image:height' content='2520'>
+
+    <link rel="icon" href="https://nishatrhythm.github.io/CSE11/images/icon.png" type="image/x-icon" sizes="30x30">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h2>
+            <span class="batch">N<sup>th</sup> Batch, Department of CSE,</span>
+            <span class="university">University Name</span>
+        </h2>
+    </div>
+
+    <section class="search-bar">
+        <div class="search-container" id="searchContainer">
+            <input type="text" id="searchInput" class="" placeholder="Search anything...">
+            <button id="searchButton">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </section>       
+
+    <!-- Add sorting and cards per page dropdowns in one line -->
+    <section class="filter-options">
+        <div class="sorting-options">
+            <label for="sorting">Sort by ID:</label>
+            <select id="sorting">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+                <option value="random">Random</option>
+            </select>
+        </div>
+
+        <div class="cards-per-page">
+            <label for="cards">Cards Per Page:</label>
+            <select id="cards">
+                <option value="12">12</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
+                <option value="48">48</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="student-profiles">
+        <!-- Student cards will be generated dynamically here using JavaScript -->
+    </section>
+
+    <div class="pagination">
+        <!-- Add these classes to your pagination buttons -->
+        <button id="prevButton" class="pagination-button pagination-previous">
+            <i class="fas fa-chevron-left"></i>
+            Previous
+        </button>
+
+        <button id="nextButton" class="pagination-button pagination-next">
+            Next <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Modal HTML -->
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i id="modalIcon" class="fa"></i>
+            </div>
+            <div class="modal-body" id="modalMessage">
+                <!-- Message content will be inserted here -->
+            </div>
+            <div class="modal-footer">
+                <button id="modalOkayBtn">OKAY</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add your footer here -->
+    <footer class="footer">
+        Designed and Developed by Nishat Mahmud | Source Code on <a href="https://github.com/nishatrhythm/CSE11"
+            target="_blank">GitHub</a> | Copyright &copy 2023
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

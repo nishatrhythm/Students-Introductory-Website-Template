@@ -1,0 +1,819 @@
+/* Font import and universal font-family declaration */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Reset some default styles for better consistency */
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar styles with animated gradient background */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #ff8a00, #e52e71, #f64f59, #c471ed, #12c2e9, #00d2ff);
+    background-size: 600% 600%;
+    animation: gradientAnimation 10s linear infinite alternate;
+}
+
+/* Animation for the navbar background gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Initial big text size */
+.big {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Smaller text size on scroll */
+.small {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Center-align the student cards */
+.student-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    padding: 0 150px;
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+/* Unique styles for student cards with animation */
+.student-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin: 10px 10px 25px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 1s ease, scaleCard 0.5s ease-in-out;
+    width: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s, box-shadow 0.5s;
+    backdrop-filter: blur(5px);
+}
+
+/* Style for the image container with a 16:9 aspect ratio */
+.student-image-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 9/16 = 56.25% for 16:9 aspect ratio */
+}
+
+/* Style for student image within the container */
+.student-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    border-radius: 10px;
+}
+
+/* Style for student name within the card */
+.student-name {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+    color: #000;
+}
+
+/* Style for ID with center alignment */
+.student-id {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Style for School, College, and Hometown with left alignment */
+.student-info {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Style for individual labels (School, College, Home Town) */
+.label {
+    font-weight: bold;
+    margin-right: 5px;
+    text-align: right;
+}
+
+/* Add some gap between labels and content */
+.student-info td {
+    padding-right: 5px;
+}
+
+/* Animation for sliding in cards from below */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for scaling the card on hover */
+@keyframes scaleCard {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Unique hover effect for the student cards */
+.student-card:hover {
+    transform: translateY(-10px) scale(1.05) rotate(-2deg);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for social media links */
+.social-links {
+    margin-top: 10px;
+}
+
+/* Style for social media icons */
+.social-links a {
+    color: #007bff;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* Hover effect for social media icons */
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* Add a class for the social media links container */
+.custom-social-links {
+    margin-top: 10px;
+}
+
+/* Style for social media icons */
+.custom-social-links a {
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* Define the colors for each social media icon */
+.custom-social-links a:nth-child(1) {
+    color: #1877f2;
+    /* Facebook color */
+}
+
+.custom-social-links a:nth-child(2) {
+    color: #1da1f2;
+    /* Twitter color */
+}
+
+.custom-social-links a:nth-child(3) {
+    color: #2867b2;
+    /* LinkedIn color */
+}
+
+.custom-social-links a:nth-child(4) {
+    color: #333;
+    /* GitHub color */
+}
+
+/* Hover effect for social media icons */
+.custom-social-links a:hover {
+    color: #0056b3;
+}
+
+/* Styling for Sorting and Cards Per Page dropdowns */
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    border-radius: 8px;
+    padding: 0 160px;
+}
+
+.filter-options label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter-options select {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-options select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Pagination styles */
+.pagination {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style for the "Previous" button */
+.pagination-previous,
+.pagination-next {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+}
+
+/* Style for the "Next" button */
+.pagination-next {
+    margin-left: 10px;
+}
+
+/* Styles for enabled pagination buttons */
+.pagination-button:not(:disabled) {
+    background-color: #007bff;
+}
+
+/* Styles for disabled pagination buttons */
+.pagination-button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Hover effect for enabled pagination buttons */
+.pagination-button:not(:disabled):hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for disabled pagination buttons */
+.pagination-button:disabled:hover {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Styles for the "Previous" button icon */
+.pagination-previous i {
+    margin-right: 8px;
+}
+
+/* Styles for the "Next" button icon */
+.pagination-next i {
+    margin-left: 8px;
+}
+
+/* Style for the search container */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px !important;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Style for the search input */
+#searchInput {
+    flex-grow: 1;
+    border: none;
+    background-color: #f2f2f2;
+    padding: 10px;
+    padding-left: 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline-color: #3498db;
+}
+
+/* Style for the search button container */
+#searchButtonContainer {
+    display: flex;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Style for the search button */
+#searchButton {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the search button icon */
+#searchButton i {
+    margin-right: 5px;
+}
+
+/* Style for the search button on hover */
+#searchButton:hover {
+    background-color: #0056b3;
+    outline-color: #0056b3;
+}
+
+/* Style for highlighted text within student-info */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Style for highlighted School text within student-info */
+.student-info .highlight-school {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Style for highlighted College text within student-info */
+.student-info .highlight-college {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Style for highlighted Hometown text within student-info */
+.student-info .highlight-hometown {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Animation for the shaky effect */
+@keyframes shaky {
+
+    10%,
+    90% {
+        transform: translateX(-5px);
+    }
+
+    20%,
+    80% {
+        transform: translateX(5px);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
+
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Apply the shaky animation to the search container when clicked */
+#searchContainer.shaky {
+    animation: shaky 0.5s;
+}
+
+/* Add a red border to the input element */
+#searchInput.red-border {
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* Style for the placeholder text when the search input has the red-border class */
+#searchInput.red-border::placeholder {
+    color: red;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    transition: visibility 0.3s, opacity 0.3s, transform 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 350px;
+    transform: translateY(-20px);
+    animation: modal-fade-slide 0.3s ease-out forwards;
+}
+
+@keyframes modal-fade-slide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-body {
+    text-align: center;
+    font-size: 16px;
+    /* font-weight: 500; */
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+#modalIcon {
+    font-size: 72px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#modalOkayBtn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 120px;
+    height: 45px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#modalOkayBtn:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: orange;
+    /* Set the text color to orange for error messages */
+}
+
+/* CSS to disable body scrolling when the modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* Footer styles */
+.footer {
+    background-image: linear-gradient(45deg, #ff8a00, #e52e71, #00bfff, #228b22);
+    background-size: 200% 200%;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Add this CSS to your styles.css file */
+.footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Very Large Desktop Styles */
+@media screen and (min-width: 1920px) {
+    .student-profiles {
+        padding: 0 100px;
+    }
+
+    .student-card {
+        width: calc(25% - 20px);
+    }
+
+    .filter-options {
+        padding: 0 112px;
+    }
+}
+
+/* Large Desktop Styles */
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+    .student-profiles {
+        padding: 0 150px;
+    }
+
+    .student-card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Large Desktop Styles */
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+    .student-profiles {
+        padding: 0 180px;
+    }
+
+    .student-card {
+        width: calc(50% - 20px);
+    }
+
+    .filter-options {
+        padding: 0 190px;
+    }
+}
+
+/* Large Desktop Styles */
+@media screen and (min-width: 1090px) and (max-width: 1200px) {
+    .student-profiles {
+        padding: 0 150px;
+    }
+
+    .student-card {
+        width: calc(50% - 20px);
+    }
+
+    .filter-options {
+        padding: 0 160px;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 660px) and (max-width: 1090px) {
+    .student-profiles {
+        padding: 0 80px;
+    }
+
+    .student-card {
+        width: calc(50% - 20px);
+    }
+
+    .filter-options {
+        padding: 0 90px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 770px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .big {
+        font-size: 28px;
+    }
+
+    .small {
+        font-size: 18px;
+    }
+
+    .student-profiles {
+        padding: 0 20px;
+    }
+
+    .student-card {
+        width: 100%;
+    }
+
+    .student-card:last-child {
+        margin-bottom: 10px;
+    }
+
+    .navbar h2 {
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+    .filter-options {
+        padding: 0 30px;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .big {
+        font-size: 32px;
+    }
+
+    .small {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .navbar h2 {
+        font-size: 16px;
+    }
+
+    .batch,
+    .university {
+        display: block;
+    }
+
+    .filter-options {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 0;
+        padding: 30px;
+    }
+
+    .filter-options label {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .filter-options select {
+        font-size: 14px;
+        width: 50%;
+    }
+
+    .filter-options .sorting-options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .filter-options .cards-per-page {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .navbar h2 {
+        font-size: 16px;
+    }
+
+    .batch,
+    .university {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .pagination {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .pagination-previous,
+    .pagination-next {
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .navbar h2 {
+        font-size: 12px;
+    }
+
+    .student-name {
+        font-size: 16px;
+    }
+
+    .student-id {
+        font-size: 12px;
+    }
+
+    .student-info {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #searchInput {
+        max-width: calc(100% - 100px);
+    }
+}

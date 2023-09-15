@@ -1,0 +1,80 @@
+[
+  {
+    "id": "01",
+    "name": "Name 01",
+    "school": "No data available",
+    "college": "No data available",
+    "hometown": "No data available",
+    "socialLinks": {
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "",
+      "github": ""
+    }
+  },
+  {
+    "id": "02",
+    "name": "Name 02",
+    "school": "No data available",
+    "college": "No data available",
+    "hometown": "No data available",
+    "socialLinks": {
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "",
+      "github": ""
+    }
+  },
+  {
+    "id": "03",
+    "name": "Name 03",
+    "school": "No data available",
+    "college": "No data available",
+    "hometown": "No data available",
+    "socialLinks": {
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "",
+      "github": ""
+    }
+  },
+  {
+    "id": "04",
+    "name": "Name 04",
+    "school": "No data available",
+    "college": "No data available",
+    "hometown": "No data available",
+    "socialLinks": {
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "",
+      "github": ""
+    }
+  },
+  {
+    "id": "05",
+    "name": "Name 05",
+    "school": "No data available",
+    "college": "No data available",
+    "hometown": "No data available",
+    "socialLinks": {
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "",
+      "github": ""
+    }
+  },
+  {
+    "id": "06",
+    "name": "Name 06",
+    "school": "No data available",
+    "college": "No data available",
+    "hometown": "No data available",
+    "socialLinks": {
+      "facebook": "",
+      "twitter": "",
+      "linkedin": "",
+      "github": ""
+    }
+  }
+]
