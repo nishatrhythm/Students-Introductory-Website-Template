@@ -68,7 +68,14 @@ For a better understanding of the installation process, you can watch the follow
 
 Click the image above or [here](https://www.youtube.com/watch?v=YOUR_VIDEO_ID) to watch the tutorial.
 
-## Some Commands
+## Downloads
+
+To work on this project, you'll need the following software:
+
+- [Visual Studio Code (VS Code)](https://code.visualstudio.com/download)
+- [Node.js](https://nodejs.org/)
+
+## Some Commands Related to This Project
 
 ### Check Node.js Version
 ```bash
