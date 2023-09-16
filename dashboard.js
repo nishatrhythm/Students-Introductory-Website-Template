@@ -61,7 +61,7 @@ function fetchAndDisplayStudents() {
             // Loop through the student data and create rows
             students.forEach((student) => {
                 // Generate a unique ID for the student
-                const studentId = `B190${student.id}`;
+                const studentId = `B19${student.id}`;
 
                 // Insert cell for ID
                 const idCell = studentId;

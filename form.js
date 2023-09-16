@@ -800,7 +800,7 @@ addStudentButton.addEventListener("click", async function (event) {
     const studentId = document.getElementById("id").value;
 
     // Check if the student ID is empty or contains only the common part
-    if (!studentId || studentId.trim() === "B1903050") {
+    if (!studentId || studentId.trim() === "B19") {
         // Set the student ID input field in red
         const studentIdInput = document.getElementById('id');
         studentIdInput.style.border = '3px solid red';
