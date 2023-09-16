@@ -3,7 +3,7 @@ Imagine being a new student at a university, in a completely unfamiliar departme
 
 Now, what's cool is that I've created a super user-friendly template for this website. You don't need to worry about servers, costs, or any fancy programming skills. It's as easy as a few clicks! You can customize and publish your very own website for your department's batch using GitHub pages.
 
-The primary objective of the Students Introductory Website is to streamline student information management within a department of educational institutions. Visit [this website](https://nishatrhythm.github.io/CSE11/) to get a overview how it looks like.
+The primary objective of the Students Introductory Website is to streamline student information management within a department of educational institutions. Visit [this website](https://nishatrhythm.github.io/CSE11/) to get a overview how it looks like. *(N.B: Admin Panel requires setting up the local server, which will be discussed later).*
 
 So, let's dive right in and make it happen. Say goodbye to feeling lost and hello to making new friends and connections effortlessly!
 
@@ -48,14 +48,54 @@ You'll need a laptop or desktop computer to create the local server and manage s
 ### Mobile (Optional)
 While a laptop is necessary for running the local server and accessing the admin panel, you also have the option to manage student records through the admin panel using a mobile web browser.
 
-### Operating System (to create the local server)
+### Operating System to create the local server (Any One)
 - Windows
 - Ubuntu
 - macOS
 
-### Operating System (for accessing the Admin Panel)
+### Operating System for accessing the Admin Panel (Any One)
 - Windows
 - Ubuntu
 - macOS
 - Android
 - iOS
+
+# 🛠️ Environment Setup
+
+For a better understanding of the installation process, you can watch the following YouTube video tutorial:
+
+[![Installation Tutorial](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
+Click the image above or [here](https://www.youtube.com/watch?v=YOUR_VIDEO_ID) to watch the tutorial.
+
+## Some Commands
+
+### Check Node.js Version
+```bash
+   node -v
+```
+
+### Install Express.js
+```bash
+   npm init -y
+```
+
+### Install Multer
+```bash
+   npm init -y
+```
+
+### Initialize a Node.js Project
+```bash
+   npm init -y
+```
+
+### Start Your Server
+```bash
+   node server.js
+```
+
+### Check Your Local IP Address
+```bash
+   ipconfig
+```
