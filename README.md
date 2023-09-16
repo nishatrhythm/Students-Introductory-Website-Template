@@ -84,12 +84,12 @@ To work on this project, you'll need the following software:
 
 ### Install Express.js
 ```bash
-   npm init -y
+   npm install express
 ```
 
 ### Install Multer
 ```bash
-   npm init -y
+   npm install multer
 ```
 
 ### Initialize a Node.js Project
