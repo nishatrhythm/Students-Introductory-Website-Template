@@ -79,30 +79,30 @@ To work on this project, you'll need the following software:
 
 ### Check Node.js Version
 ```bash
-   node -v
+node -v
 ```
 
 ### Install Express.js
 ```bash
-   npm install express
+npm install express
 ```
 
 ### Install Multer
 ```bash
-   npm install multer
+npm install multer
 ```
 
 ### Initialize the Node.js Project
 ```bash
-   npm init -y
+npm init -y
 ```
 
 ### Start Your Server
 ```bash
-   node server.js
+node server.js
 ```
 
 ### Check Your Local IP Address
 ```bash
-   ipconfig
+ipconfig
 ```
