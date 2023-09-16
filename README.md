@@ -92,7 +92,7 @@ To work on this project, you'll need the following software:
    npm install multer
 ```
 
-### Initialize a Node.js Project
+### Initialize the Node.js Project
 ```bash
    npm init -y
 ```
