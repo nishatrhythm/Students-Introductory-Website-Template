@@ -60,11 +60,11 @@ While a laptop is necessary for running the local server and accessing the admin
 - Android
 - iOS
 
-# 🛠️ Environment Setup
+# 🚀 Getting Started
 
-For a better understanding of the installation process, you can watch the following YouTube video tutorial:
+For a comprehensive guide on setting up, modifying the project, and publishing it, you can watch the following YouTube video tutorial:
 
-[![Installation Tutorial](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Getting Started Tutorial](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
 Click the image above or [here](https://www.youtube.com/watch?v=YOUR_VIDEO_ID) to watch the tutorial.
 
