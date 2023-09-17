@@ -106,3 +106,4 @@ node server.js
 ```bash
 ipconfig
 ```
+**Make sure that your desktop / laptop and mobile phones are connected to the same Wi-Fi.**
