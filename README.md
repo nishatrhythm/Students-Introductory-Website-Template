@@ -23,7 +23,7 @@ So, let's dive right in and make it happen. Say goodbye to feeling lost and hell
 - **Image Upload**: Multer
 
 ## Installation and Usage
-To set up and use the Student Management System, refer to the [documentation](link-to-documentation).
+To set up and use the Student Management System, refer to the [documentation](https://github.com/nishatrhythm/Students-Introductory-Website-Template/tree/main?tab=readme-ov-file#-getting-started).
 
 ## Contributing
 Contributions to this project are welcome! Please review the [contribution guidelines](link-to-contribution-guidelines) for details on how to get involved.
